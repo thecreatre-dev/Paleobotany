@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "paleobotany",
+	"version": "${version}",
+	"name": "Paleobotany",
+	"description": "Paleobotany is a mod that explore the possibility of combining dinosaur dna and fruit dna.",
+	"authors": [
+		"TheCreatre"
+	],
+	"contact": {
+		"homepage": "https://thecreatre.net",
+		"sources": "https://github.com/thecreatre-dev/Paleobotany"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/paleobotany/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.thecreatre.paleobotany.Paleobotany"
+		],
+		"fabric-datagen": [
+			"com.thecreatre.paleobotany.PaleobotanyDataGenerator"
+		],
+		"client": [
+			"com.thecreatre.paleobotany.PaleobotanyClient"
+		]
+	},
+	"mixins": [
+		"paleobotany.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
